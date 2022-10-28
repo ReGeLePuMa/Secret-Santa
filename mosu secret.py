@@ -12,7 +12,7 @@ dict={
 }
 
 subject="Secret Santa!"
-body="Draga {},\nPersoana careia trebuie sai dai cadou este {}.\nSemnat, spiridusul lui Mos Craciun."
+body="Draga {},\nPersoana careia trebuie sa-i dai cadou este {}.\nSemnat, spiridusul lui Mos Craciun."
 
 message="Subject:"+subject+"\n\n"+body
 
@@ -20,6 +20,7 @@ destinatar=list(dict.keys())
 recipient=list(dict.keys())
 random.shuffle(recipient)
 i=0
+#Shuffling such that all values have changed index
 while True:
     if destinatar[i]==recipient[i]:
         random.shuffle(recipient)
