@@ -4,7 +4,7 @@ import json
 from email import message
 
 sender=str(input('Enter sender email:'))
-sender_pass=str(input('Enter send email password/token:'))
+sender_pass=str(input('Enter sender email password/token:'))
 session=smtplib.SMTP_SSL('smtp.gmail.com', 465)
 session.login(sender,sender_pass)
 
