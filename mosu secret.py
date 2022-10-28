@@ -1,5 +1,6 @@
 import random
 import smtplib
+import json
 from email import message
 
 sender="" # Include sender's email
@@ -7,9 +8,10 @@ sender_pass="" # Include sender's email password/ token for app use
 session=smtplib.SMTP_SSL('smtp.gmail.com', 465)
 session.login(sender,sender_pass)
 
-dict={
-    #To add items in format {Name}:{Email address}
-}
+with open('dictionary.txt') as f:
+    data = f.read()
+
+dict=json.loads(data)
 
 subject="Secret Santa!"
 body="Draga {},\nPersoana careia trebuie sa-i dai cadou este {}.\nSemnat, spiridusul lui Mos Craciun."
