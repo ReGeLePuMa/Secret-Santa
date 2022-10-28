@@ -8,7 +8,7 @@ session=smtplib.SMTP_SSL('smtp.gmail.com', 465)
 session.login(sender,sender_pass)
 
 dict={
-    """To add items in format {Name}:{Email address}"""
+    #To add items in format {Name}:{Email address}
 }
 
 subject="Secret Santa!"
