@@ -1,0 +1,1 @@
+## To add JSON object containing Name: Email Address for all participants
