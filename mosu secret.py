@@ -3,8 +3,8 @@ import smtplib
 import json
 from email import message
 
-sender="" # Include sender's email
-sender_pass="" # Include sender's email password/ token for app use
+sender=str(input('Enter sender email:'))
+sender_pass=str(input('Enter send email password/token:'))
 session=smtplib.SMTP_SSL('smtp.gmail.com', 465)
 session.login(sender,sender_pass)
 
